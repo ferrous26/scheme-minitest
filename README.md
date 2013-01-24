@@ -13,7 +13,8 @@ that is similar to Ruby's MiniTest.
 Assertions added so far:
 
 ```scheme
-(assert-equal expected actual)
+(assert expr "Test name" "error message")
+(assert-equal expected actual "Test name")
 ```
 
 Output is nicely formatted, similar to what you would get using
@@ -24,6 +25,9 @@ Output is nicely formatted, similar to what you would get using
 
 F****************************************
 (41 tests)(1 failure)
+
+1) (+ 1 2)
+(Expected 4 to be equal to 3)
 ```
 
 ## License
